@@ -1,0 +1,13 @@
+{
+	"functions": {
+		"*.php": {
+		  "runtime": "vercel-php@0.1.0"
+		}
+	},
+	"alias": ["adsense.vercel.app","adsense"],
+	"routes": [
+		{ "handle": "filesystem" },
+		{ "src": "/(.*)", "status": 404, "dest": "/index.php" }
+	]
+  
+}
